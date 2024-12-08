@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Маршрути подорожей</title>
+    <link rel="stylesheet" href="css/marshryti.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Подорожі</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index11.html">Головна</a></li>
+                    <li><a href="marshryti.html" class="active">Маршрути</a></li>
+                    <li><a href="gallery.html">Про нас</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="filter-section">
+        <h2>Знайти маршрут</h2>
+        <div class="filter-container">
+            <input type="text" id="search" placeholder="Пошук по маршруту...">
+            <select id="route-type">
+                <option value="">Тип подорожі</option>
+                <option value="trekking">Трекінг</option>
+                <option value="road-trip">Дорожня подорож</option>
+                <option value="city-tour">Міський тур</option>
+            </select>
+            <button id="search-btn">Знайти</button>
+        </div>
+    </section>
+
+    <section class="routes-list">
+        <h2>Популярні маршрути</h2>
+
+        <!-- Маршрут 1: Японія -->
+        <div class="route-card">
+            <h3>Подорож по Японії</h3>
+            <p>Тип: Міський тур</p>
+            <p>Місце початку: Токіо</p>
+            <p>Місце завершення: Осака</p>
+            <a href="#">Деталі маршруту</a>
+        </div>
+
+        <!-- Маршрут 2: Австрія -->
+        <div class="route-card">
+            <h3>Відкриття Австрії</h3>
+            <p>Тип: Трекінг</p>
+            <p>Місце початку: Відень</p>
+            <p>Місце завершення: Зальцбург</p>
+            <a href="#">Деталі маршруту</a>
+        </div>
+
+        <!-- Маршрут 3: Домініканська Республіка -->
+        <div class="route-card">
+            <h3>Сонячна Домініканська Республіка</h3>
+            <p>Тип: Дорожня подорож</p>
+            <p>Місце початку: Пунта-Кана</p>
+            <p>Місце завершення: Санто-Домінго</p>
+            <a href="#">Деталі маршруту</a>
+        </div>
+
+        <!-- Маршрут 4: Італія -->
+        <div class="route-card">
+            <h3>Мандрівка по Італії</h3>
+            <p>Тип: Міський тур</p>
+            <p>Місце початку: Рим</p>
+            <p>Місце завершення: Венеція</p>
+            <a href="#">Деталі маршруту</a>
+        </div>
+
+        <!-- Маршрут 5: Нова Зеландія -->
+        <div class="route-card">
+            <h3>Трекінг по Новій Зеландії</h3>
+            <p>Тип: Трекінг</p>
+            <p>Місце початку: Окленд</p>
+            <p>Місце завершення: Квінстаун</p>
+            <a href="#">Деталі маршруту</a>
+        </div>
+
+    </section>
+
+    <section class="map">
+        <h2>Маршрути на карті</h2>
+        <div id="map"></div>
+    </section>
+
+    <footer>
+        <p>© Лотарев Артем 2024</p>
+    </footer>
+
+    <script src="marshryti.js"></script>
+</body>
+</html>

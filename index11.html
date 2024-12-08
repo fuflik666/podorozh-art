@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Планування Подорожей</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Планування Подорожей</h1>
+    </header>
+
+    <!-- Кнопка для відкриття меню -->
+    <button class="open-menu-btn" onclick="toggleMenu()">☰</button>
+
+    <!-- Навігація -->
+    <nav>
+        <ul>
+            <li><a href="index11.html">Головна</a></li>
+            <li><a href="marshryti.html">Маршрути</a></li>
+            <li><a href="poradi.html">Поради</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <!-- Головний контент -->
+    <section id="home">
+        <h2>Ласкаво просимо до сайту для планування подорожей!</h2>
+        <p>Дізнайтесь, як організувати незабутню подорож по світу, отримати найкращі поради та відкрийте для себе нові напрямки.</p>
+    </section>
+
+    <section>
+        <h2>Популярні місця для подорожей</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="image/japan.jpg" alt="Місце 1">
+            </div>
+            <div class="gallery-item">
+                <img src="image/pynta.jpg" alt="Місце 2">
+            </div>
+            <div class="gallery-item">
+                <img src="image/zelden.jpg" alt="Місце 3">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © Лотарев Артем
+    </footer>
+
+    <script>
+        // Функція для відкриття/закриття меню
+        function toggleMenu() {
+            var menu = document.querySelector('nav');
+            if (menu.style.left === '0px') {
+                menu.style.left = '-300px';
+            } else {
+                menu.style.left = '0';
+            }
+        }
+    </script>
+
+</body>
+</html>

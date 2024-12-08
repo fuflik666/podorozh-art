@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Навігаційне меню -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="routes.html">Маршрути</a></li>
+            <li><a href="tips.html">Поради</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <!-- Основний контент -->
+    <section id="contact">
+        <h2>Контакти</h2>
+        <p>Привіт! Мене звати Артем, я займаюсь плануванням подорожей та допомагаю людям знаходити найкращі маршрути для відпочинку.</p>
+
+        <!-- Фотографія автора -->
+        <div class="contact-info">
+            <img src="image/photo.jpg" alt="artem" class="contact-photo">
+            <div class="contact-details">
+                <h3>Про мене</h3>
+                <p>Привіт мене звати Артем Лотарев, тут я створював весь цей сайт, я вчусь на кафедрі Інженерії програмного забезпечення на 3 курсі, мені подобається створювати сайти, це доволі захопливе та цікаве заняття.</p>
+                <h4>Контакти:</h4>
+                <p>Email: artem@gmail.com</p>
+                <p>Телефон: +380 123 456 789</p>
+            </div>
+        </div>
+
+        <!-- Форма для контакту -->
+        <h3>Напишіть мені</h3>
+        <form action="#" method="POST" class="contact-form">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Ваше повідомлення:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Надіслати</button>
+        </form>
+    </section>
+</body>
+</html>
